@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Kita</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">Kopi Kita</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#signature">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+                <li class="nav-item"><a class="nav-link" href="#kontak">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>    
+
+     <!--Hero Section-->
+     <header class="hero-section">
+      <div class="hero-content text-center">
+        <h1>WELCOME TO KOPI KITA</h1>
+        <p class="coordinates">Brewed with passion, served with love.</p>
+        <p class="description">
+          Discover rich flavors, signature blends, and cozy moments with every sip.
+          Let's start your coffe journey here at Kopi Kita.
+        </p>
+        <a href="#signature" class="btn btn-light mt-3"> See Our Menu</a>
+      </div>
+    </header>
+    
+  <!--About Section-->
+  <section id="about" class="about-section container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h3 class="fw-bold mb-3">About Kopi Kita</h3>
+    <p class="lead">
+      "Kopi Kita was born from a simple dream -- to create a space where everyone could share stories, laughter, and good coffe. Starting from a smaal local passion project, we blended our love for rich flavors and cozy atmospheres into every cup we serve.
+      At Kopi Kita, it's not just about coffe. It's about connection, comfort, and creating memories -- one sip at a time. Wheter you need a place to slow down, catch up with friends, or find inspiration, we're here for you.
+      Welcome to Kopi Kita -- where every coffe is shared, every moment matters."
+    </p>
+  </div>
+  <div class="col-md-6">
+    <div class="about-img-wrapper shadow rounded-4 overflow-hidden">
+      <img src="https://i.pinimg.com/736x/6c/1e/35/6c1e35d59732b51edb484f5810651023.jpg" alt="About Kopi Kita" class="img-fluid">
+    </div>
+  </div>
+</div>
+</section>
+        
+
+    <!--Signature Products (kopi)-->
+      <section class="container my-5" id="signature">
+        <h3 class="text-center mb-4">Signature Kopi Kita</h3>
+            <div class="row">
+
+            <!--Midnight Mocha-->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow rounded-4">
+                  <img src="https://i.pinimg.com/736x/80/b7/99/80b799e54d28095a7e4149d14d9edb74.jpg" class="card-img-top" alt="Midnight Mocha">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Midnight Mocha</h5>
+                    <p class="card-text">Espresso + dark chocolate + vanilla.<br><small class="text-muted">Perfect for late-night thinkers.</small></p>
+                    <button class="btn btn-primary" onclick="scrollToForm('Midnight Mocha')">Pesan</button>
+                  </div>
+                </div>
+              </div>
+            <!--Caramel Cloud Latte-->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow rounded-4">
+                  <img src="https://i.pinimg.com/736x/fe/74/f8/fe74f82e9eb922b7ec2964371f12e5d1.jpg" class="card-img-top" alt="Caramel Cloud Latte">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Caramel Cloud Latte</h5>
+                    <p class="card-text">Smooth espresso topped with velvety steamed milk and golden caramel drizzle.</p>
+                    <button class="btn btn-primary" onclick="scrollToForm('Caramel Cloud Latte')">Pesan</button>
+                  </div>
+                </div>
+              </div>
+            <!--Iced Hazelnut Dream-->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow rounded-4">
+                  <img src="https://i.pinimg.com/736x/59/c2/5e/59c25e9d88a16d8ee12b3c4888cf9203.jpg" class="card-img-top" alt="Iced Hazelnut Dream">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Iced Hazelnut Dream</h5>
+                    <p class="card-text">Chilled espresso, hazelnut syrup, and milk over ice for a nutty, refreshing twist.</p>
+                    <button class="btn btn-primary" onclick="scrollToForm('Iced Hazelnut Dream')">Pesan</button>
+                  </div>
+                </div>
+              </div>
+            <!--Matcha Meets Espresso-->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow rounded-4">
+                  <img src="https://i.pinimg.com/736x/47/2b/2b/472b2b3ce030aaae78b4c538abe64cbd.jpg" class="card-img-top" alt="Matcha Meets Espresso">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Matcha Meets Espresso</h5>
+                    <p class="card-text">When Japan meets Italy-earthy matcha blendes with espresso for a unique bold taste.</p>
+                    <button class="btn btn-primary" onclick="scrollToForm('Matcha Meets Espresso')">Pesan</button>
+                  </div>
+                </div>
+              </div>
+            <!--Brown Sugar Shaken Latte-->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow rounded-4">
+                  <img src="https://i.pinimg.com/736x/7e/d3/e3/7ed3e387d09594893078d08a5cfa8ab9.jpg" class="card-img-top" alt="Brown Sugar Shaken Latte">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Brown Sugar Shaken Latte</h5>
+                    <p class="card-text">Espresso shaken with brown sugar and milk, topped with thick  crema.</p>
+                    <button class="btn btn-primary" onclick="scrollToForm('Brown Sugar Shaken Latte')">Pesan</button>
+                  </div>
+                </div>
+              </div>
+            <!--Kopi Kita's Secret Brew-->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow rounded-4">
+                  <img src="https://i.pinimg.com/736x/00/53/87/0053879db34d852a7251e37385a7c8ac.jpg" class="card-img-top" alt="Kopi Kita's Secret Brew">
+                  <div class="card-body text-center">
+                    <h5 class="card-title">Kopi Kita Secret Brew</h5>
+                    <p class="card-text">Our barista's mystery mix-different every month, always a surprise.</p>
+                    <button class="btn btn-primary" onclick="scrollToForm('Kopi Kita Secret Brew')">Pesan</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </section>
+
+      <section class="container my-5" id="non-coffe">
+        <h3 class="text-center mb-4">Non-Coffee Favorites Kopi Kita</h3>
+        <div class="row">
+        
+         <!--Strawberry Sunset Fizz-->
+         <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow rounded-4">
+              <img src="https://i.pinimg.com/736x/fd/b2/db/fdb2db7a400a05be91d73db60353edcf.jpg" class="card-img-top" alt="Strawberry Sunset Fizz">
+              <div class="card-body text-center">
+                <h5 class="card-title">Strawberry Sunset Fizz</h5>
+                <p class="card-text">A Fizzy blend of strawberry syrup, soda, and a hint of citrus.<br><small class="text-muted">Like drinking golden hour.</small></p>
+                <button class="btn btn-primary" onclick="scrollToForm('Strawberry Sunset Fizz')">Pesan</button>
+              </div>
+            </div>
+          </div>
+        <!--Choco Lava Float-->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow rounded-4">
+              <img src="https://i.pinimg.com/736x/97/db/c5/97dbc5616a99b16141ac1b52d133c939.jpg" class="card-img-top" alt="Choco Lava Float">
+              <div class="card-body text-center">
+                <h5 class="card-title">Choco Lava Float</h5>
+                <p class="card-text">Rich chocolate blended with ice cream, topped with chocolate drizzle.</p>
+                <button class="btn btn-primary" onclick="scrollToForm('Choco Lava Float')">Pesan</button>
+              </div>
+            </div>
+          </div>
+        <!--Mango Matcha Breeze-->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow rounded-4">
+              <img src="https://i.pinimg.com/736x/e5/0e/86/e50e8698c5d3b029db99945ca331a48c.jpg" class="card-img-top" alt="Mango Matcha Breeze">
+              <div class="card-body text-center">
+                <h5 class="card-title">Mango Matcha Breeze</h5>
+                <p class="card-text">Fresh mango meets chilled matcha for a tropical, refreshing combo.</p>
+                <button class="btn btn-primary" onclick="scrollToForm('Mango Matcha Breeze')">Pesan</button>
+              </div>
+            </div>
+          </div>
+        <!--Pumpkin Spice Chill-->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow rounded-4">
+              <img src="https://i.pinimg.com/736x/67/59/9b/67599bfb97ce40d15fea1ae5e4ae9ccf.jpg" class="card-img-top" alt="Pumpkin Spice Chill">
+              <div class="card-body text-center">
+                <h5 class="card-title">Pumpkin Spice Chill</h5>
+                <p class="card-text">Creamy spiced pumpkin blend with espresso and whipped cream on top.</p>
+                <button class="btn btn-primary" onclick="scrollToForm('Pumpkin Spice Chill')">Pesan</button>
+              </div>
+            </div>
+          </div>
+        <!--Blueberry Lemonade Splash--> 
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow rounded-4">
+            <img src="https://i.pinimg.com/474x/15/27/23/15272379dd2c19d83136c06d56134ba5.jpg" class="card-img-top" alt="Pumpkin Spice Chill">
+            <div class="card-body text-center">
+              <h5 class="card-title">Blueberry Lemonade Splash</h5>
+              <p class="card-text">Homemade lemonade stirred with fresh blueberry syrup.</p>
+              <button class="btn btn-primary" onclick="scrollToForm('Pumpkin Spice Chill')">Pesan</button>
+            </div>
+          </div>
+        </div>
+        <!--Tropical Yuzu Sparkle--> 
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow rounded-4">
+            <img src="https://i.pinimg.com/474x/cc/c2/3a/ccc23a80359fba7488ceed9086f7c792.jpg" class="card-img-top" alt="Pumpkin Spice Chill">
+            <div class="card-body text-center">
+              <h5 class="card-title">Tropical Yuzu Sparkle</h5>
+              <p class="card-text">Zesty yuzu citrus meets sparkling water for a refreshing and tangy drink.</p>
+              <button class="btn btn-primary" onclick="scrollToForm('Pumpkin Spice Chill')">Pesan</button>
+            </div>
+          </div>
+        </div>
+    </div>
+     </section>
+
+<!-- Location Section -->
+<section id="location" class="container my-5 text-center">
+  <h3>Find Us</h3>
+  <p>Jalan Bahagia No.123, Kediri, Jawa Timur</p>
+  <iframe src="https://maps.google.com/maps?q=Kediri&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+
+<!-- Kontak Section -->
+<section id="kontak" class="container my-5 text-center">
+  <h3>Hubungi Kami</h3>
+  <p>Instagram: @kopikita</p>
+  <p>Email: kopikita@email.com</p>
+</section>
+      
+      <!--Formulir Pesan Section-->
+      <section id="form-pesan" class="container my-5">
+        <h3 class="text-center mb-4">📝 Formulir Pemesanan</h3>
+        <form class="bg-dark p-4 rounded-4 text-light" style="max-width: 600px; margin: 0 auto;">
+          <div class="mb-3">
+            <label for="nama" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="nama" placeholder="Masukkan nama lengkap">
+          </div>
+          <div class="mb-3">
+            <label for="produk" class="form-label">Produk yang Dipesan</label>
+            <input type="text" class="form-control" id="produk" placeholder="Contoh: Midnight Mocha">
+          </div>
+          <div class="mb-3">
+            <label for="jumlah" class="form-label">Jumlah</label>
+            <input type="number" class="form-control" id="jumlah" placeholder="Masukkan jumlah pesanan">
+          </div>
+          <div class="mb-3">
+            <label for="catatan" class="form-label">Catatan Tambahan</label>
+            <textarea class="form-control" id="catatan" rows="3" placeholder="Opsional..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Kirim Pesanan</button>
+        </form>
+      </section>
+      
+      <script>
+        function scrollToForm(productName) {
+          const formSection = document.getElementById('form-pesan');
+          const inputProduk = document.getElementById('produk');
+          formSection.scrollIntoView({ behavior: 'smooth' });
+          if (inputProduk) {
+            inputProduk.value = productName;
+          }
+        }
+      </script>
+      
+</body>
+</html>
